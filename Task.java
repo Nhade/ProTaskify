@@ -8,5 +8,12 @@ public class Task{
     String taskName;
     Priority priority;
     LocalDateTime deadline;
-    boolean isDone = false;
+    boolean isDone;
+
+    public Task(String name, Priority priority, LocalDateTime time){
+        this.taskName = name;
+        this.priority = priority;
+        this.deadline = time;
+        this.isDone = false;
+    }
 }
