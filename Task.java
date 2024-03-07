@@ -5,7 +5,8 @@ enum Priority {
 }
 
 public class Task{
+    String taskName;
     Priority priority;
     LocalDateTime deadline;
-    boolean isDone;
+    boolean isDone = false;
 }
