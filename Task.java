@@ -1,10 +1,11 @@
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 enum Priority {
     URGENT, IMPORTANT, NORMAL
 }
 
-public class Task{
+public class Task implements Serializable{
     String taskName;
     Priority priority;
     LocalDateTime deadline;
