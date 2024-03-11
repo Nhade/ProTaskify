@@ -1,5 +1,10 @@
+import java.util.ArrayList;
+
 public class TaskManager {
-    
+    public TaskManager(){
+        FileManager FileIO = new FileManager();
+        ArrayList<Task> taskList = FileIO.loadTasks("testSave.ser");
+    }
     public static void addTask(){
 
     }
